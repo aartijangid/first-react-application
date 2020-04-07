@@ -7,9 +7,18 @@ import Hello from './components/Hello'
 function App() {
   return (
     <div className="App">
-      {/* {<Greet/>} */}
-      {/* {<Welcome/>} */}
-      <Hello />
+      {<Greet name='Aarti' hobby='Painting'>
+        <p >This is a child of Greet component</p>
+        </Greet>}
+      {<Greet name='Swapnil' hobby='Video Games'>
+        <button>Play</button>
+        </Greet>}
+      {<Greet name='Meghna' hobby='Social Media'></Greet>}
+      {<Welcome name='Aarti' hobby='Painting'></Welcome>}
+      {<Welcome name='Swapnil' hobby='Video Games'></Welcome>}
+      {<Welcome name='Aarti' hobby='Painting'></Welcome>}
+
+      {/* <Hello /> */}
     </div>
   );
 }
