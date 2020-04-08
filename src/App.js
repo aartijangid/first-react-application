@@ -3,11 +3,14 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
-
+import Message from './components/Message'
 function App() {
   return (
     <div className="App">
-      {<Greet name='Aarti' hobby='Painting'>
+      
+      <Message />
+
+      {/* {<Greet name='Aarti' hobby='Painting'>
         <p >This is a child of Greet component</p>
         </Greet>}
       {<Greet name='Swapnil' hobby='Video Games'>
@@ -16,7 +19,7 @@ function App() {
       {<Greet name='Meghna' hobby='Social Media'></Greet>}
       {<Welcome name='Aarti' hobby='Painting'></Welcome>}
       {<Welcome name='Swapnil' hobby='Video Games'></Welcome>}
-      {<Welcome name='Aarti' hobby='Painting'></Welcome>}
+      {<Welcome name='Aarti' hobby='Painting'></Welcome>} */}
 
       {/* <Hello /> */}
     </div>
