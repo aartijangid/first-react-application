@@ -10,17 +10,28 @@ class Counter extends Component {
     }
     
     increment() {
-        this.setState({ 
-            count: this.state.count + 1
-            })
+        // this.setState({ 
+        //     count: this.state.count + 1
+        //     },
+        //     () => console.log('Callback Value', this.state.count))
+
+        this.setState(previousState => ({
+            count: previousState.count + 1
+        }))
+
         console.log(this.state.count)
+    }
+
+    incrementTwice(){
+        this.increment()
+        this.increment()
     }
 
     render() {
         return (
             <div>
                 <div>Count - {this.state.count}</div>
-                <button onClick = {() => this.increment()}>
+                <button onClick = {() => this.incrementTwice()}>
                 Increment
                 </button>
             </div>
