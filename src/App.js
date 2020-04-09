@@ -6,12 +6,15 @@ import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
+
+      <ParentComponent />
       
-      <EventBind />
+      {/* <EventBind />
 
       <Counter />
 
@@ -28,7 +31,7 @@ function App() {
       {<Welcome name='Swapnil' hobby='Video Games'></Welcome>}
       {<Welcome name='Aarti' hobby='Painting'></Welcome>}
 
-      <Hello />
+      <Hello /> */}
     </div>
   );
 }
